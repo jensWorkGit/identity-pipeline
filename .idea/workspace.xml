@@ -1,68 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e933dc5-3dfd-4b0a-a54a-6ebdc74d1e92" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0_rc2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/identity-pipeline.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/AddressVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/AddressVerifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/BadIdentity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/BadIdentity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/CompletablePatterns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/CompletablePatterns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/EmailFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/EmailFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/FileIdentityReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/FileIdentityReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Identity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Identity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/IdentityIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/IdentityIterable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/IdentityReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/IdentityReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/IdentityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/IdentityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/LineReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/LineReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/MalformedIdentityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/MalformedIdentityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/NewFileIdentityReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/NewFileIdentityReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/NoPasswordIdentityReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/NoPasswordIdentityReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/NoValidAddressesException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/NoValidAddressesException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/PhoneNumberFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/PhoneNumberFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/SimpleEmailFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/SimpleEmailFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/SimplePhoneNumberFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/SimplePhoneNumberFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/StatsLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/StatsLedger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/LockableStatsLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/LockableStatsLedger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/SimpleStatsLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/SimpleStatsLedger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/StreamedIdentityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/StreamedIdentityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/ThreadSafeIdentityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/ThreadSafeIdentityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/ThreadSafeStatsLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/ThreadSafeStatsLedger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/CompletableFutureIdentityPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/CompletableFutureIdentityPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/ContinuationPassingIdentityPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/ContinuationPassingIdentityPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/CountDownLatchIdentityPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/CountDownLatchIdentityPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/SingleThreadedIdentityPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/SingleThreadedIdentityPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/fireandforget/ForkJoinPoolMalformedIdentityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/fireandforget/ForkJoinPoolMalformedIdentityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/fireandforget/ProducerMalformedIdentityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/fireandforget/ProducerMalformedIdentityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/fireandforget/ThreadPoolExecutorMalformedIdentityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/fireandforget/ThreadPoolExecutorMalformedIdentityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/CopyingInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/CopyingInputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/IdentityPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/IdentityPipeline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/SimpleIdentityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/SimpleIdentityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/SimpleStatsLedger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/SimpleStatsLedger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/ExecutorCompletionServiceScatterGatherer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/ExecutorCompletionServiceScatterGatherer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/ExecutorServiceScatterGatherer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/ExecutorServiceScatterGatherer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/MultiStrategyIdentityReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/MultiStrategyIdentityReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/ScatterGatherer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/ScatterGatherer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/SingleThreadedScatterGatherer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/splitting/SingleThreadedScatterGatherer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/BackpressureAddressVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/BackpressureAddressVerifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/Batcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/Batcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/BatchingAddressVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/BatchingAddressVerifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/ConnectionLimitingAddressVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/ConnectionLimitingAddressVerifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/CyclicBarrierBatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/CyclicBarrierBatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/CyclicBarrierBatcherAddressVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/CyclicBarrierBatcherAddressVerifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/LineLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/LineLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/PhaserBatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/PhaserBatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/PhaserBatcherAddressVerifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/throttle/PhaserBatcherAddressVerifier.java" afterDir="false" />
-    </list>
+    <list default="true" id="3e933dc5-3dfd-4b0a-a54a-6ebdc74d1e92" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,45 +19,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="9" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="9" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/ThreadSafeStatsLedger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Address.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/fireandforget/ForkJoinPoolMalformedIdentityRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/single/CopyingInputStream.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,13 +62,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/dependency/CompletableFutureIdentityPipeline.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/SimpleStatsLedger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-pipeline.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -258,7 +193,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="3827" />
     <option name="y" value="126" />
     <option name="width" value="3864" />
@@ -341,6 +276,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540643203981" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -397,15 +333,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540642110213</updated>
-      <workItem from="1540642111761" duration="1091000" />
+      <workItem from="1540642111761" duration="1356000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1091000" />
+    <option name="totallyTimeSpent" value="1356000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3833" y="132" width="2208" height="1208" extended-state="7" />
+    <frame x="3833" y="132" width="2208" height="1208" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -445,24 +381,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/SimpleStatsLedger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/ThreadSafeStatsLedger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -500,6 +429,19 @@
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/joshcummings/codeplay/concurrency/aggregation/SimpleStatsLedger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-pipeline.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

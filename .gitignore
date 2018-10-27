@@ -5,7 +5,7 @@
 .metadata
 /target/
 /bin/
-
+.idea
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
