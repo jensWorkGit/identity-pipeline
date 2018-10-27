@@ -4,21 +4,21 @@ import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
 
 public interface Identity {
-	Integer getId();
-	
-	String getUsername();
+    Integer getId();
 
-	char[] getPassword();
+    String getUsername();
 
-	String getName();
+    char[] getPassword();
 
-	String getPhoneNumber();
+    String getName();
 
-	String getEmailAddress();
+    String getPhoneNumber();
 
-	Integer getAge();
-	
-	List<Address> getAddresses();
-	
-	ReentrantLock getLock();
+    String getEmailAddress();
+
+    Integer getAge();
+
+    List<Address> getAddresses();
+
+    ReentrantLock getLock();
 }

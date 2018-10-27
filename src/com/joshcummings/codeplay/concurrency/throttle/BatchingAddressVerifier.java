@@ -1,100 +1,90 @@
 package com.joshcummings.codeplay.concurrency.throttle;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.BrokenBarrierException;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.TimeoutException;
-import java.util.stream.Collectors;
-
 import com.joshcummings.codeplay.concurrency.Address;
 import com.joshcummings.codeplay.concurrency.AddressVerifier;
 
-public class BatchingAddressVerifier implements AddressVerifier {
-	private BlockingQueue<BatchOperation> jobQueue = new LinkedBlockingQueue<>();
-	
-	private final AddressVerifier delegate;
-	
-	private final CyclicBarrier batcher;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
-	private final int batchSize;
-	private final int timeout;
-	
-	private final ExecutorService fetcher = Executors.newFixedThreadPool(500);
-	private final ExecutorService sender = Executors.newFixedThreadPool(500);
-	private final ExecutorService latch = Executors.newFixedThreadPool(500);
-	
-	public BatchingAddressVerifier(AddressVerifier delegate, int batchSize, int timeout) {
-		this.delegate = delegate;
-		this.batchSize = batchSize;
-		this.timeout = timeout;
-		batcher = new CyclicBarrier(batchSize);
-	}
-	
-	private void fetchThenSendBatch() {
-		List<BatchOperation> batch = new ArrayList<>(batchSize);
-		jobQueue.drainTo(batch, batchSize);
-		
-		sender.submit(() -> {
-			List<Address> addresses = batch.stream().map(p -> p.a).collect(Collectors.toList());
-			delegate.verify(addresses);
-			batch.stream().forEach(p -> p.c.countDown());
-		});
-	}
-	
-	@Override
-	public void verify(List<Address> addresses) {
-		CountDownLatch cdl = new CountDownLatch(addresses.size());
-		
-		addresses.stream()
-			.forEach(address -> {
-				jobQueue.offer(new BatchOperation(address, cdl));
-				fetcher.submit(() -> {
-					try {
-						if ( batcher.await(timeout, TimeUnit.MILLISECONDS) == 0 ) {
-							fetchThenSendBatch();
-						}
-					}
-					catch (TimeoutException | BrokenBarrierException | InterruptedException e) {
-						fetchThenSendBatch();
-					}
-				});
-			});
-		
-		latch.submit(() -> {
-			try {
-				cdl.await();
-			} catch ( InterruptedException e ) {
-				Thread.currentThread().interrupt();
-			}
-		});
-	}
-	
-	public void close() {
-		fetcher.shutdownNow();
-		sender.shutdownNow();
-		latch.shutdownNow();
-	}
-	
-	private static class BatchOperation {
-		public final Address a;
-		public final CountDownLatch c;
-		
-		public BatchOperation(Address a, CountDownLatch c) {
-			this.a = a;
-			this.c = c;
-		}
-	}
-	
-	public static Address mockAddress(int id) {
-		return new Address(id + ": asdf", "asdf", "asdf", "asdf");
-	}
+public class BatchingAddressVerifier implements AddressVerifier {
+    private BlockingQueue<BatchOperation> jobQueue = new LinkedBlockingQueue<>();
+
+    private final AddressVerifier delegate;
+
+    private final CyclicBarrier batcher;
+
+    private final int batchSize;
+    private final int timeout;
+
+    private final ExecutorService fetcher = Executors.newFixedThreadPool(500);
+    private final ExecutorService sender  = Executors.newFixedThreadPool(500);
+    private final ExecutorService latch   = Executors.newFixedThreadPool(500);
+
+    public BatchingAddressVerifier(AddressVerifier delegate, int batchSize, int timeout) {
+        this.delegate = delegate;
+        this.batchSize = batchSize;
+        this.timeout = timeout;
+        batcher = new CyclicBarrier(batchSize);
+    }
+
+    private void fetchThenSendBatch() {
+        List<BatchOperation> batch = new ArrayList<>(batchSize);
+        jobQueue.drainTo(batch, batchSize);
+
+        sender.submit(() -> {
+            List<Address> addresses = batch.stream().map(p -> p.a).collect(Collectors.toList());
+            delegate.verify(addresses);
+            batch.stream().forEach(p -> p.c.countDown());
+        });
+    }
+
+    @Override
+    public void verify(List<Address> addresses) {
+        CountDownLatch cdl = new CountDownLatch(addresses.size());
+
+        addresses.stream().forEach(address -> {
+            jobQueue.offer(new BatchOperation(address, cdl));
+            fetcher.submit(() -> {
+                try {
+                    if (batcher.await(timeout, TimeUnit.MILLISECONDS) == 0) {
+                        fetchThenSendBatch();
+                    }
+                } catch (TimeoutException | BrokenBarrierException | InterruptedException e) {
+                    fetchThenSendBatch();
+                }
+            });
+        });
+
+        latch.submit(() -> {
+            try {
+                cdl.await();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        });
+    }
+
+    public void close() {
+        fetcher.shutdownNow();
+        sender.shutdownNow();
+        latch.shutdownNow();
+    }
+
+    private static class BatchOperation {
+        public final Address        a;
+        public final CountDownLatch c;
+
+        public BatchOperation(Address a, CountDownLatch c) {
+            this.a = a;
+            this.c = c;
+        }
+    }
+
+    public static Address mockAddress(int id) {
+        return new Address(id + ": asdf", "asdf", "asdf", "asdf");
+    }
 	
 /*	public static void main(String[] args) {
 		int numberOfJobs = 9997;
